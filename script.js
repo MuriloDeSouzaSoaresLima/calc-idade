@@ -7,7 +7,7 @@ function calcularTempo() {
 
     const diferenca = falecimento - nascimento;
 
-    if (diferenca > 0) {
+    if (diferenca >= 0) {
         const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
     const semanas = Math.floor(dias / 7);
     const meses = Math.floor(dias / 30.44);
